@@ -10,7 +10,7 @@ public class Seeds {
 
     public void generateSeeds(){
 
-        Menu menuLibanes = new Menu("Libanes", 30.5);
+        Menu menuLibanes = new Menu("Jordan", 30.5);
         Menu menuVeggie = new Menu("Veggie", 20);
         Menu menuBurguer = new Menu("Libanes", 25);
 
