@@ -12,7 +12,7 @@ public class Producto {
     private Long id;
     private String name;
     private String desc;
-    private int talla;
+    private double talla;
 
     public Producto(String name, String email, int talla) {
         this.setName(name);
@@ -41,5 +41,5 @@ public class Producto {
 
     public double getTalla() { return talla; }
 
-    public void setTalla(int talla) { this.talla = talla; }
+    public void setTalla(double talla) { this.talla = talla; }
 }
