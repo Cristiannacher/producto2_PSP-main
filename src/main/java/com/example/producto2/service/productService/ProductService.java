@@ -1,6 +1,5 @@
 package com.example.producto2.service.productService;
 
-import com.example.producto2.model.Menu;
 import com.example.producto2.model.Producto;
 import com.example.producto2.repository.ProductoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +31,7 @@ public class ProductService implements IProdcutService {
     public Producto update(Producto producto) {
         Producto currentProduct = productoRepository.findById(producto.getId()).get();
         currentProduct.setDesc(producto.getDesc());
-        currentProduct.setName(producto.getName());
+        currentProduct.setDescripcion(producto.getDescripcion());
         currentProduct.setTalla(producto.getTalla());
         return productoRepository.save(currentProduct);
     }
