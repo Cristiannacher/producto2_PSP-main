@@ -10,11 +10,11 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.AUTO)
 
     private Long id;
-    private String descripcion;
+    private String desc;
     private double talla;
 
     public Producto(String name, int talla) {
-        this.setDescripcion(name);
+        this.setDesc(name);
         this.setTalla(talla);
     }
 
@@ -25,9 +25,9 @@ public class Producto {
 
     public void setId(Long id) { this.id = id; }
 
-    public String getDescripcion() { return descripcion; }
+    public String getDesc() { return desc; }
 
-    public void setDescripcion(String name) { this.descripcion = name; }
+    public void setDesc(String name) { this.desc = name; }
 
     public double getTalla() { return talla; }
 

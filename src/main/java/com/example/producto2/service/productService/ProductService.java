@@ -31,7 +31,7 @@ public class ProductService implements IProdcutService {
     public Producto update(Producto producto) {
         Producto currentProduct = productoRepository.findById(producto.getId()).get();
         currentProduct.setDesc(producto.getDesc());
-        currentProduct.setDescripcion(producto.getDescripcion());
+        currentProduct.setDesc(producto.getDesc());
         currentProduct.setTalla(producto.getTalla());
         return productoRepository.save(currentProduct);
     }
