@@ -21,7 +21,12 @@ public class Seeds {
         menuRepository.save(menuVeggie);
         menuRepository.save(menuBurguer);
 
-        Producto producto1 = new Producto("");
+        Producto producto1 = new Producto("zapatila negra",45);
+        Producto producto2 = new Producto("zapatila roja",40);
+        Producto producto3 = new Producto("zapatila verde",35);
+        productoRepository.save(producto1);
+        productoRepository.save(producto2);
+        productoRepository.save(producto3);
     }
 
 }
