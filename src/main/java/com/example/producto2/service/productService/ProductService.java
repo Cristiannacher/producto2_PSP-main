@@ -30,8 +30,8 @@ public class ProductService implements IProductService {
     @Override
     public Producto update(Producto producto) {
         Producto currentProduct = productoRepository.findById(producto.getId()).get();
-        currentProduct.setDesc(producto.getDesc());
-        currentProduct.setDesc(producto.getDesc());
+        currentProduct.setDescripcion(producto.getDescripcion());
+        currentProduct.setDescripcion(producto.getDescripcion());
         currentProduct.setTalla(producto.getTalla());
         return productoRepository.save(currentProduct);
     }

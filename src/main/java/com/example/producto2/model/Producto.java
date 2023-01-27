@@ -11,15 +11,15 @@ public class Producto {
 
     private Long id;
     private String nombre;
-    private String desc;
+    private String descripcion;
 
     private double precio;
     private double talla;
 
 
-    public Producto(String name,String desc, double precio, int talla) {
-        this.setNombre(nombre);
-        this.setDesc(desc);
+    public Producto(String name,String descripcio, double precio, int talla) {
+        this.setNombre(name);
+        this.setDescripcion(descripcio);
         this.setPrecio(precio);
         this.setTalla(talla);
     }
@@ -38,9 +38,9 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public String getDesc() { return desc; }
+    public String getDescripcion() { return descripcion; }
 
-    public void setDesc(String name) { this.desc = name; }
+    public void setDescripcion(String name) { this.descripcion = name; }
     public double getPrecio(){
         return precio;
     }
