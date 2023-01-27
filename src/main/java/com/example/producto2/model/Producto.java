@@ -13,8 +13,8 @@ public class Producto {
     private String desc;
     private double talla;
 
-    public Producto(String name, int talla) {
-        this.setDesc(name);
+    public Producto(String desc, int talla) {
+        this.setDesc(desc);
         this.setTalla(talla);
     }
 
@@ -27,7 +27,7 @@ public class Producto {
 
     public String getDesc() { return desc; }
 
-    public void setDesc(String name) { this.desc = name; }
+    public void setDesc(String desc) { this.desc = desc; }
 
     public double getTalla() { return talla; }
 

@@ -9,7 +9,7 @@ import java.util.Optional;
 
 
 @Service
-public class ProductService implements IProdcutService {
+public class ProductService implements IProductService {
     @Autowired
     private ProductoRepository productoRepository;
 

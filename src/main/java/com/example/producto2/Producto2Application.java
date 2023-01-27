@@ -1,17 +1,17 @@
 package com.example.producto2;
 
+import com.example.producto2.repository.MarcaRepository;
 import com.example.producto2.repository.ProductoRepository;
 import com.example.producto2.seeds.Seeds;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import com.example.producto2.repository.MenuRepository;
 
 @SpringBootApplication
 public class Producto2Application {
     @Autowired
-    MenuRepository menuRepository;
+    MarcaRepository marcaRepositary;
     @Autowired
     ProductoRepository productoRepository;
 
@@ -22,9 +22,7 @@ public class Producto2Application {
 
     @Bean
     void commandLineRunner(){
-        Seeds seeds = new Seeds(menuRepository);
-        Seeds seeds1 = new Seeds(productoRepository);
+        Seeds seeds = new Seeds(marcaRepositary, productoRepository);
         seeds.generateSeeds();
-        seeds1.generateSeeds();
     }
 }

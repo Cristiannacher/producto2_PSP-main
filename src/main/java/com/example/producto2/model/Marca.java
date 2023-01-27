@@ -1,11 +1,10 @@
 package com.example.producto2.model;
 
-import javax.persistence.*;
 
+import javax.persistence.*;
 
 @Entity
 @Table(name= "Marca")
-
 
 public class Marca {
     @Id
@@ -20,6 +19,7 @@ public class Marca {
     }
 
     public Marca(){
+
     }
 
     public Long getId() {return id; }

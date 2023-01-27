@@ -1,6 +1,5 @@
 package com.example.producto2.controller;
 
-import com.example.producto2.service.menuService.MenuService;
 import com.example.producto2.service.productService.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
