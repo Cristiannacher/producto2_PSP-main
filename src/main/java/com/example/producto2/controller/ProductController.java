@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/")
 
-public class ProductController {
+public class  ProductController {
     @Autowired
     private ProductService productService;
 
@@ -18,6 +18,6 @@ public class ProductController {
     public String product(Model model){
         model.addAttribute("productos",productService.findAll());
 
-        return "product";
+        return "producto";
     }
 }

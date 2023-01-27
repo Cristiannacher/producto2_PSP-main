@@ -20,9 +20,9 @@ public class Seeds {
         menuRepository.save(marcaAdidas);
         menuRepository.save(marcaNike);
 
-        Producto producto1 = new Producto("zapatila negra",45);
-        Producto producto2 = new Producto("zapatila roja",40);
-        Producto producto3 = new Producto("zapatila verde",35);
+        Producto producto1 = new Producto("zapatilla1","zapatillas rojas y negras",134.6,45);
+        Producto producto2 = new Producto("zapatilla2","zapatillas verdes y negras",145.43,35);
+        Producto producto3 = new Producto("zapatilla3","zapatillas azul y negras",200,43);
         productoRepository.save(producto1);
         productoRepository.save(producto2);
         productoRepository.save(producto3);
